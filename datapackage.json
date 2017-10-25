@@ -130,6 +130,21 @@
       }
     }
   ],
+  "views": [
+    {
+      "datahub": {
+        "type": "preview"
+      },
+      "name": "datahub-preview-nys-mathematics-exam-csv_csv_preview",
+      "resources": [
+        "nys-mathematics-exam-csv"
+      ],
+      "specType": "table",
+      "transform": {
+        "limit": 2000
+      }
+    }
+  ],
   "source_license_requirements": "None",
   "sources": [
     {
