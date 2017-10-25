@@ -1,0 +1,147 @@
+{
+  "citation": "City of New York (data.cityofnewyork.us)",
+  "contributors": [
+    {
+      "email": "support@JohnSnowLabs.com",
+      "role": "author",
+      "title": "johnsnowlabs",
+      "uri": "http://www.JohnSnowLabs.com"
+    }
+  ],
+  "description": "This dataset contains the information of NEW YORK CITY Results on the NEW YORK STATE English Language Arts (ELA) & Mathematics Exams (Grades 3 - 8) 2013 - 2015 Notes Starting in 2013, the NY State Education Department (NYSED) changed the exams to be Common Core aligned.",
+  "documentation": "In 2007, the New York State Education Department updated its testing policy for English Language Learners: ELLs in an English Language School System for more than one year are required to take the ELA exam. Previously, ELLs in an English Language School System for less than 3 years were exempt from taking the ELA exam. Former English Language Learners includes any students who were classified as English Language Learners in at least one of the previous two school years. A change in State testing policy drove a decrease in eighth grade proficiency rates in 2014 and 2015: to reduce double testing, most students in accelerated math courses who took the Algebra Regents exam were exempt from taking the 7th and 8th grade State math assessment. The numbers on the \"All - with Math Regents\" tab represent the equivalent proficiency had the accelerated math students in 7th and 8th grade taken the State math assessment. An \"All Grades\" row represents how this would impact a school's overall proficiency. Only Districts 1-32 are shown and rows with 5 or fewer students are suppressed.",
+  "keywords": [
+    "School Exam",
+    "Exam Reports",
+    "Regents Exam",
+    "Math Test"
+  ],
+  "name": "nys-mathematics-exam",
+  "other_titles": [
+    "Education in New York",
+    "Math School Exam"
+  ],
+  "resources": [
+    {
+      "encoding": "utf-8",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "name": "nys-mathematics-exam-csv",
+      "path": "nys-mathematics-exam-csv.csv",
+      "schema": {
+        "fields": [
+          {
+            "description": "Total Number of Grades",
+            "name": "Grade",
+            "type": "string"
+          },
+          {
+            "description": "Grade Awarding Year",
+            "format": "any",
+            "name": "Year",
+            "type": "date"
+          },
+          {
+            "description": "Education Category (General, Special)",
+            "name": "Category",
+            "type": "string"
+          },
+          {
+            "constraints": {
+              "level": "Ratio"
+            },
+            "description": "Total number of tested",
+            "name": "Number_Tested",
+            "type": "integer"
+          },
+          {
+            "constraints": {
+              "level": "Ratio"
+            },
+            "description": "Mean of Scale Core",
+            "name": "Mean_Scale_Score",
+            "type": "integer"
+          },
+          {
+            "constraints": {
+              "level": "Ratio"
+            },
+            "description": "Score of Level 1",
+            "name": "Number_Level_1",
+            "type": "integer"
+          },
+          {
+            "constraints": {
+              "level": "Ratio"
+            },
+            "description": "Percentage of Level 1",
+            "name": "Percentage_Level_1",
+            "type": "number"
+          },
+          {
+            "constraints": {
+              "level": "Ratio"
+            },
+            "description": "Score of Level 2",
+            "name": "Number_Level_2",
+            "type": "integer"
+          },
+          {
+            "constraints": {
+              "level": "Ratio"
+            },
+            "description": "Percentage of Level 2",
+            "name": "Percentage_Level_2",
+            "type": "number"
+          },
+          {
+            "constraints": {
+              "level": "Ratio"
+            },
+            "description": "Score of Level 3",
+            "name": "Number_Level_3",
+            "type": "integer"
+          },
+          {
+            "constraints": {
+              "level": "Ratio"
+            },
+            "description": "Percentage of Level 3",
+            "name": "Percentage_Level_3",
+            "type": "number"
+          },
+          {
+            "constraints": {
+              "level": "Ratio"
+            },
+            "description": "Score of Level 4",
+            "name": "Number_Level_4",
+            "type": "integer"
+          },
+          {
+            "constraints": {
+              "level": "Ratio"
+            },
+            "description": "Percentage of Level 4",
+            "name": "Percentage_Level_4",
+            "type": "number"
+          }
+        ]
+      }
+    }
+  ],
+  "source_license_requirements": "None",
+  "sources": [
+    {
+      "title": "johnsnowlabs"
+    },
+    {
+      "title": "City of New York"
+    }
+  ],
+  "spatial_coverage": "New York",
+  "temporal_coverage": "2013-2015",
+  "title": "NYS Mathematics Exam",
+  "update_frequency": "Irregular",
+  "version": "2016-06-16"
+}
